@@ -5,7 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="csrf-token" content="{{ csrf_token() }}">
 	<title>{{ config('app.name', 'VPN') }}</title>
-	@vite('resources/css/app.css')
+{{--	@vite('resources/css/app.css')--}}
+	<link href="{{asset('build/assets/app-6ee18969.css')}}" rel="stylesheet">
 	<link href="{{asset('assets/libs/tiny-slider/tiny-slider.css')}}" rel="stylesheet">
 	<link href="{{asset('assets/libs/tobii/css/tobii.min.css')}}" rel="stylesheet">
 	<link href="{{asset('assets/libs/choices.js/public/assets/styles/choices.min.css')}}" rel="stylesheet">
