@@ -11,7 +11,7 @@
 				</div>
 				<div class="flex w-full">
 					<div class="h-full w-full">
-						<img src="https://next-landing-vpn.vercel.app/_next/image?url=%2Fassets%2FIllustration1.png&w=3840&q=100" alt=""/>
+						<img src="{{ asset('assets/img/hero_1.webp') }}" alt=""/>
 					</div>
 				</div>
 			</div>
@@ -21,7 +21,7 @@
 				<div class="flex items-center justify-start sm:justify-center py-4 sm:py-6 w-8/12 px-4 sm:w-auto mx-auto sm:mx-0">
 					<div class="flex mx-auto w-40 sm:w-auto">
 						<div class="flex items-center justify-center bg-orange-100 w-12 h-12 mr-6 rounded-full">
-							<img src="https://next-landing-vpn.vercel.app/assets/Icon/heroicons_sm-user.svg" class="h-6 w-6" alt=""/>
+							<img src="{{ asset('assets/icons/user.svg') }}" class="h-6 w-6" alt=""/>
 						</div>
 						<div class="flex flex-col"><p class="text-xl text-black-600 font-bold">390 +</p>
 							<p class="text-lg text-black-500">Users</p>
@@ -31,7 +31,7 @@
 				<div class="flex items-center justify-start sm:justify-center py-4 sm:py-6 w-8/12 px-4 sm:w-auto mx-auto sm:mx-0">
 					<div class="flex mx-auto w-40 sm:w-auto">
 						<div class="flex items-center justify-center bg-orange-100 w-12 h-12 mr-6 rounded-full">
-							<img src="https://next-landing-vpn.vercel.app/assets/Icon/gridicons_location.svg" class="h-6 w-6" alt=""/>
+							<img src="{{ asset('assets/icons/location.svg') }}" class="h-6 w-6" alt=""/>
 						</div>
 						<div class="flex flex-col"><p class="text-xl text-black-600 font-bold">20 +</p>
 							<p class="text-lg text-black-500">Locations</p>
@@ -41,7 +41,7 @@
 				<div class="flex items-center justify-start sm:justify-center py-4 sm:py-6 w-8/12 px-4 sm:w-auto mx-auto sm:mx-0">
 					<div class="flex mx-auto w-40 sm:w-auto">
 						<div class="flex items-center justify-center bg-orange-100 w-12 h-12 mr-6 rounded-full">
-							<img src="https://next-landing-vpn.vercel.app/assets/Icon/bx_bxs-server.svg" class="h-6 w-6" alt=""/>
+							<img src="{{ asset('assets/icons/server.svg') }}" class="h-6 w-6" alt=""/>
 						</div>
 						<div class="flex flex-col"><p class="text-xl text-black-600 font-bold">50 +</p>
 							<p class="text-lg text-black-500">Server</p>
@@ -58,7 +58,7 @@
 		<div class="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-2 gap-8 p  y-8 my-12">
 			<div class="flex w-full justify-end">
 				<div class="h-full w-full p-4">
-					<img src="https://next-landing-vpn.vercel.app/_next/image?url=%2Fassets%2FIllustration2.png&w=3840&q=100" alt=""/>
+					<img src="{{ asset('assets/img/hero_2.webp') }}" alt=""/>
 				</div>
 			</div>
 			<div>
@@ -66,16 +66,16 @@
 					<p class="my-2 text-black-500">You can explore the features that we provide with fun and have their own functions each feature.</p>
 					<ul class="text-black-500 self-start list-inside">
 						<li class="relative circle-check custom-list">
-							<img class="inline-block" src="https://next-landing-vpn.vercel.app/assets/Icon/checklist.svg" alt=""/> Powerfull online protection.
+							<img class="inline-block" src="{{ asset('assets/icons/checklist.svg') }}" alt=""/> Powerfull online protection.
 						</li>
 						<li class="relative circle-check custom-list">
-							<img class="inline-block" src="https://next-landing-vpn.vercel.app/assets/Icon/checklist.svg" alt=""/> Internet without borders.
+							<img class="inline-block" src="{{ asset('assets/icons/checklist.svg') }}" alt=""/> Internet without borders.
 						</li>
 						<li class="relative circle-check custom-list">
-							<img class="inline-block" src="https://next-landing-vpn.vercel.app/assets/Icon/checklist.svg" alt=""/> Supercharged VPN
+							<img class="inline-block" src="{{ asset('assets/icons/checklist.svg') }}" alt=""/> Supercharged VPN
 						</li>
 						<li class="relative circle-check custom-list">
-							<img class="inline-block" src="https://next-landing-vpn.vercel.app/assets/Icon/checklist.svg" alt=""/> No specific time limits.
+							<img class="inline-block" src="{{ asset('assets/icons/checklist.svg') }}" alt=""/> No specific time limits.
 						</li>
 					</ul>
 				</div>
@@ -93,7 +93,7 @@
 					<div class="flex justify-center">
 						<div class="flex flex-col justify-center items-center border-2 border-gray-500 rounded-xl py-4 px-6 lg:px-12 xl:px-20">
 							<div class="p-4 lg:p-0 mt-6 lg:mt-16">
-								<img src="https://next-landing-vpn.vercel.app/_next/image?url=%2Fassets%2FFree.png&w=384&q=75" alt=""/>
+								<img src="{{ asset('assets/img/plan_1.webp') }}" alt=""/>
 							</div>
 							<p class="text-lg text-black-600 font-medium capitalize my-2 sm:my-7">Free Plan</p>
 							<ul class="flex flex-col list-inside pl-6 xl:pl-0 items-start justify-start text-left text-black-500 flex-grow">
@@ -111,7 +111,7 @@
 					<div class="flex justify-center">
 						<div class="flex flex-col justify-center items-center border-2 border-gray-500 rounded-xl py-4 px-6 lg:px-12 xl:px-20">
 							<div class="p-4 lg:p-0 mt-6 lg:mt-16">
-								<img src="https://next-landing-vpn.vercel.app/_next/image?url=%2Fassets%2FStandard.png&w=384&q=75" alt=""/>
+								<img src="{{ asset('assets/img/plan_2.webp') }}" alt=""/>
 							</div>
 							<p class="text-lg text-black-600 font-medium capitalize my-2 sm:my-7">Standard Plan </p>
 							<ul class="flex flex-col list-inside pl-6 xl:pl-0 items-start justify-start text-left text-black-500 flex-grow">
@@ -130,7 +130,7 @@
 					<div class="flex justify-center">
 						<div class="flex flex-col justify-center items-center border-2 border-gray-500 rounded-xl py-4 px-6 lg:px-12 xl:px-20">
 							<div class="p-4 lg:p-0 mt-6 lg:mt-16">
-								<img src="https://next-landing-vpn.vercel.app/_next/image?url=%2Fassets%2FPremium.png&w=384&q=75" alt=""/>
+								<img src="{{ asset('assets/img/plan_3.webp') }}" alt=""/>
 							</div>
 							<p class="text-lg text-black-600 font-medium capitalize my-2 sm:my-7">Premium Plan </p>
 							<ul class="flex flex-col list-inside pl-6 xl:pl-0 items-start justify-start text-left text-black-500 flex-grow">
@@ -154,16 +154,16 @@
 					<p class="leading-normal  mx-auto my-2 w-10/12 sm:w-7/12 lg:w-6/12">See VPN everywhere to make it easier for you when you move locations.</p></div>
 				<div>
 					<div class="py-12 w-full px-8 mt-16">
-						<x-map/>
+						<img src="{{ asset('assets/icons/map.svg') }}" alt="">
 					</div>
 				</div>
 				<div>
 					<div class="w-full flex justify-evenly items-center mt-4 flex-wrap lg:flex-nowrap">
-						<img src="/assets/Icon/amazon.png" class="h-14 w-auto mt-4 lg:mt-2" alt="">
-						<img src="/assets/Icon/netflix.png" class="h-14 w-auto mt-2 lg:mt-0" alt="">
-						<img src="/assets/Icon/reddit.png" class="h-12 w-auto mt-2 lg:mt-0" alt="">
-						<img src="/assets/Icon/discord.png" class="h-14 w-auto mt-2 lg:mt-0" alt="">
-						<img src="/assets/Icon/spotify.png" class="h-12 w-auto mt-2 lg:mt-0" alt="">
+						<img src="{{ asset('assets/img/amazon.png') }}" class="h-14 w-auto mt-4 lg:mt-2" alt="">
+						<img src="{{ asset('assets/img/netflix.png') }}" class="h-14 w-auto mt-2 lg:mt-0" alt="">
+						<img src="{{ asset('assets/img/reddit.png') }}" class="h-12 w-auto mt-2 lg:mt-0" alt="">
+						<img src="{{ asset('assets/img/discord.png') }}" class="h-14 w-auto mt-2 lg:mt-0" alt="">
+						<img src="{{ asset('assets/img/spotify.png') }}" class="h-12 w-auto mt-2 lg:mt-0" alt="">
 					</div>
 				</div>
 			</div>
@@ -175,13 +175,13 @@
 						<div class="slick-slider flex items-stretch justify-items-stretch slick-initialized" dir="ltr">
 							<div class="slick-list">
 								<div class="slick-track">
-									<div data-index="-3" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true">
+									<div class="slick-slide slick-cloned">
 										<div>
 											<div class="px-3 flex items-stretch" tabindex="-1">
 												<div class="border-2 border-gray-500 hover:border-orange-500 transition-all rounded-lg p-8 flex flex-col">
 													<div class="flex flex-col xl:flex-row w-full items-stretch xl:items-center">
 														<div class="flex order-2 xl:order-1">
-															<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt=""/>
+															<img src="{{ asset('assets/img/people.webp') }}" alt=""/>
 															<div class="flex flex-col ml-5 text-left"><p class="text-lg text-black-600 capitalize">iezh Robert</p>
 																<p class="text-sm text-black-500 capitalize">Warsaw , Poland</p>
 															</div>
@@ -195,249 +195,6 @@
 													</div>
 													<p class="mt-5 text-left">“ Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. VPN always the best ”.</p>
 												</div>
-											</div>
-										</div>
-									</div>
-									<div data-index="-2" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true">
-										<div>
-											<div class="px-3 flex items-stretch" tabindex="-1">
-												<div class="border-2 border-gray-500 hover:border-orange-500 transition-all rounded-lg p-8 flex flex-col">
-													<div class="flex flex-col xl:flex-row w-full items-stretch xl:items-center">
-														<div class="flex order-2 xl:order-1">
-															<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt=""/>
-															<div class="flex flex-col ml-5 text-left"><p class="text-lg text-black-600 capitalize">iezh Robert</p>
-																<p class="text-sm text-black-500 capitalize">Warsaw , Poland</p>
-															</div>
-														</div>
-														<div class="flex flex-none items-center ml-auto order-1 xl:order-2">
-															<p class="text-sm">4.5</p><span class="flex ml-4">
-																<svg class="h-4 w-4" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-																	<path d="M14.19 6.418l-3.968-.577-1.774-3.595a.502.502 0 0 0-.897 0L5.779 5.841l-3.967.577a.5.5 0 0 0-.277.853l2.87 2.799-.677 3.951a.5.5 0 0 0 .725.527L8 12.682l3.548 1.866a.5.5 0 0 0 .725-.527l-.678-3.951 2.87-2.799a.499.499 0 0 0-.276-.853z" fill="#FEA250"></path>
-																</svg>
-															</span>
-														</div>
-													</div>
-													<p class="mt-5 text-left">“ Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. VPN always the best ”.</p>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div data-index="-1" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true">
-										<div>
-											<div class="px-3 flex items-stretch" tabindex="-1">
-												<div class="border-2 border-gray-500 hover:border-orange-500 transition-all rounded-lg p-8 flex flex-col">
-													<div class="flex flex-col xl:flex-row w-full items-stretch xl:items-center">
-														<div class="flex order-2 xl:order-1">
-															<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt=""/>
-															<div class="flex flex-col ml-5 text-left"><p class="text-lg text-black-600 capitalize">iezh Robert</p>
-																<p class="text-sm text-black-500 capitalize">Warsaw , Poland</p>
-															</div>
-														</div>
-														<div class="flex flex-none items-center ml-auto order-1 xl:order-2"><p class="text-sm">4.5</p>
-															<span class="flex ml-4">
-																<svg class="h-4 w-4" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-																	<path d="M14.19 6.418l-3.968-.577-1.774-3.595a.502.502 0 0 0-.897 0L5.779 5.841l-3.967.577a.5.5 0 0 0-.277.853l2.87 2.799-.677 3.951a.5.5 0 0 0 .725.527L8 12.682l3.548 1.866a.5.5 0 0 0 .725-.527l-.678-3.951 2.87-2.799a.499.499 0 0 0-.276-.853z" fill="#FEA250"></path>
-																</svg>
-															</span>
-														</div>
-													</div>
-													<p class="mt-5 text-left">“ Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. VPN always the best ”.</p>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div data-index="0" class="slick-slide slick-active slick-current" tabindex="-1" aria-hidden="false">
-										<div>
-											<div class="px-3 flex items-stretch" tabindex="-1">
-												<div class="border-2 border-gray-500 hover:border-orange-500 transition-all rounded-lg p-8 flex flex-col">
-													<div class="flex flex-col xl:flex-row w-full items-stretch xl:items-center">
-														<div class="flex order-2 xl:order-1">
-															<img src="/_next/image?url=%2Fassets%2Fpeople-3.png&amp;w=128&amp;q=75" alt=""/>
-															<div class="flex flex-col ml-5 text-left"><p class="text-lg text-black-600 capitalize">iezh Robert</p>
-																<p class="text-sm text-black-500 capitalize">Warsaw , Poland</p>
-															</div>
-														</div>
-														<div class="flex flex-none items-center ml-auto order-1 xl:order-2">
-															<p class="text-sm">4.5</p>
-															<span class="flex ml-4">
-																<svg class="h-4 w-4" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-																	<path d="M14.19 6.418l-3.968-.577-1.774-3.595a.502.502 0 0 0-.897 0L5.779 5.841l-3.967.577a.5.5 0 0 0-.277.853l2.87 2.799-.677 3.951a.5.5 0 0 0 .725.527L8 12.682l3.548 1.866a.5.5 0 0 0 .725-.527l-.678-3.951 2.87-2.799a.499.499 0 0 0-.276-.853z" fill="#FEA250"></path>
-																</svg>
-															</span>
-														</div>
-													</div>
-													<p class="mt-5 text-left">“ Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. VPN always the best ”.</p>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div data-index="1" class="slick-slide slick-active" tabindex="-1" aria-hidden="false">
-										<div>
-											<div class="px-3 flex items-stretch" tabindex="-1">
-												<div class="border-2 border-gray-500 hover:border-orange-500 transition-all rounded-lg p-8 flex flex-col">
-													<div class="flex flex-col xl:flex-row w-full items-stretch xl:items-center">
-														<div class="flex order-2 xl:order-1">
-															<img src="/_next/image?url=%2Fassets%2Fpeople-3.png&amp;w=128&amp;q=75" alt=""/>
-															<div class="flex flex-col ml-5 text-left"><p class="text-lg text-black-600 capitalize">iezh Robert</p>
-																<p class="text-sm text-black-500 capitalize">Warsaw , Poland</p>
-															</div>
-														</div>
-														<div class="flex flex-none items-center ml-auto order-1 xl:order-2">
-															<p class="text-sm">4.5</p>
-															<span class="flex ml-4">
-																<svg class="h-4 w-4" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-																	<path d="M14.19 6.418l-3.968-.577-1.774-3.595a.502.502 0 0 0-.897 0L5.779 5.841l-3.967.577a.5.5 0 0 0-.277.853l2.87 2.799-.677 3.951a.5.5 0 0 0 .725.527L8 12.682l3.548 1.866a.5.5 0 0 0 .725-.527l-.678-3.951 2.87-2.799a.499.499 0 0 0-.276-.853z" fill="#FEA250"></path>
-																</svg>
-															</span>
-														</div>
-													</div>
-													<p class="mt-5 text-left">“ Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. VPN always the best ”.</p>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div data-index="2" class="slick-slide slick-active" tabindex="-1" aria-hidden="false">
-										<div>
-											<div class="px-3 flex items-stretch" tabindex="-1">
-												<div class="border-2 border-gray-500 hover:border-orange-500 transition-all rounded-lg p-8 flex flex-col">
-													<div class="flex flex-col xl:flex-row w-full items-stretch xl:items-center">
-														<div class="flex order-2 xl:order-1">
-															<img src="/_next/image?url=%2Fassets%2Fpeople-3.png&amp;w=128&amp;q=75" alt=""/>
-															<div class="flex flex-col ml-5 text-left"><p class="text-lg text-black-600 capitalize">iezh Robert</p>
-																<p class="text-sm text-black-500 capitalize">Warsaw , Poland</p>
-															</div>
-														</div>
-														<div class="flex flex-none items-center ml-auto order-1 xl:order-2">
-															<p class="text-sm">4.5</p>
-															<span class="flex ml-4">
-																<svg class="h-4 w-4" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-																	<path d="M14.19 6.418l-3.968-.577-1.774-3.595a.502.502 0 0 0-.897 0L5.779 5.841l-3.967.577a.5.5 0 0 0-.277.853l2.87 2.799-.677 3.951a.5.5 0 0 0 .725.527L8 12.682l3.548 1.866a.5.5 0 0 0 .725-.527l-.678-3.951 2.87-2.799a.499.499 0 0 0-.276-.853z" fill="#FEA250"></path>
-																</svg>
-															</span>
-														</div>
-													</div>
-													<p class="mt-5 text-left">“ Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. VPN always the best ”.</p>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div data-index="3" class="slick-slide" tabindex="-1" aria-hidden="true">
-										<div>
-											<div class="px-3 flex items-stretch" tabindex="-1">
-												<div class="border-2 border-gray-500 hover:border-orange-500 transition-all rounded-lg p-8 flex flex-col">
-													<div class="flex flex-col xl:flex-row w-full items-stretch xl:items-center">
-														<div class="flex order-2 xl:order-1">
-															<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt=""/>
-															<div class="flex flex-col ml-5 text-left"><p class="text-lg text-black-600 capitalize">iezh Robert</p>
-																<p class="text-sm text-black-500 capitalize">Warsaw , Poland</p>
-															</div>
-														</div>
-														<div class="flex flex-none items-center ml-auto order-1 xl:order-2">
-															<p class="text-sm">4.5</p>
-															<span class="flex ml-4">
-																<svg class="h-4 w-4" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-																	<path d="M14.19 6.418l-3.968-.577-1.774-3.595a.502.502 0 0 0-.897 0L5.779 5.841l-3.967.577a.5.5 0 0 0-.277.853l2.87 2.799-.677 3.951a.5.5 0 0 0 .725.527L8 12.682l3.548 1.866a.5.5 0 0 0 .725-.527l-.678-3.951 2.87-2.799a.499.499 0 0 0-.276-.853z" fill="#FEA250"></path>
-																</svg>
-															</span>
-														</div>
-													</div>
-													<p class="mt-5 text-left">“ Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. VPN always the best ”.</p>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div data-index="4" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true">
-										<div>
-											<div class="px-3 flex items-stretch" tabindex="-1">
-												<div class="border-2 border-gray-500 hover:border-orange-500 transition-all rounded-lg p-8 flex flex-col">
-													<div class="flex flex-col xl:flex-row w-full items-stretch xl:items-center">
-														<div class="flex order-2 xl:order-1">
-															<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt=""/>
-															<div class="flex flex-col ml-5 text-left"><p class="text-lg text-black-600 capitalize">iezh Robert</p>
-																<p class="text-sm text-black-500 capitalize">Warsaw , Poland</p>
-															</div>
-														</div>
-														<div class="flex flex-none items-center ml-auto order-1 xl:order-2">
-															<p class="text-sm">4.5</p>
-															<span class="flex ml-4">
-																<svg class="h-4 w-4" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-																	<path d="M14.19 6.418l-3.968-.577-1.774-3.595a.502.502 0 0 0-.897 0L5.779 5.841l-3.967.577a.5.5 0 0 0-.277.853l2.87 2.799-.677 3.951a.5.5 0 0 0 .725.527L8 12.682l3.548 1.866a.5.5 0 0 0 .725-.527l-.678-3.951 2.87-2.799a.499.499 0 0 0-.276-.853z" fill="#FEA250"></path>
-																</svg>
-															</span>
-														</div>
-													</div>
-													<p class="mt-5 text-left">“ Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. VPN always the best ”.</p>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div data-index="5" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true">
-										<div>
-											<div class="px-3 flex items-stretch" tabindex="-1">
-												<div class="border-2 border-gray-500 hover:border-orange-500 transition-all rounded-lg p-8 flex flex-col">
-													<div class="flex flex-col xl:flex-row w-full items-stretch xl:items-center">
-														<div class="flex order-2 xl:order-1">
-															<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt=""/>
-															<div class="flex flex-col ml-5 text-left"><p class="text-lg text-black-600 capitalize">iezh Robert</p>
-																<p class="text-sm text-black-500 capitalize">Warsaw , Poland</p>
-															</div>
-														</div>
-														<div class="flex flex-none items-center ml-auto order-1 xl:order-2">
-															<p class="text-sm">4.5</p>
-															<span class="flex ml-4">
-																<svg class="h-4 w-4" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-																	<path d="M14.19 6.418l-3.968-.577-1.774-3.595a.502.502 0 0 0-.897 0L5.779 5.841l-3.967.577a.5.5 0 0 0-.277.853l2.87 2.799-.677 3.951a.5.5 0 0 0 .725.527L8 12.682l3.548 1.866a.5.5 0 0 0 .725-.527l-.678-3.951 2.87-2.799a.499.499 0 0 0-.276-.853z" fill="#FEA250"></path>
-																</svg>
-															</span>
-														</div>
-													</div>
-													<p class="mt-5 text-left">“ Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. VPN always the best ”.</p>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div data-index="6" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true">
-										<div>
-											<div class="px-3 flex items-stretch" tabindex="-1">
-												<div class="border-2 border-gray-500 hover:border-orange-500 transition-all rounded-lg p-8 flex flex-col">
-													<div class="flex flex-col xl:flex-row w-full items-stretch xl:items-center">
-														<div class="flex order-2 xl:order-1">
-															<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt=""/>
-															<div class="flex flex-col ml-5 text-left"><p class="text-lg text-black-600 capitalize">iezh Robert</p>
-																<p class="text-sm text-black-500 capitalize">Warsaw , Poland</p>
-															</div>
-														</div>
-														<div class="flex flex-none items-center ml-auto order-1 xl:order-2">
-															<p class="text-sm">4.5</p>
-															<span class="flex ml-4">
-																<svg class="h-4 w-4" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.19 6.418l-3.968-.577-1.774-3.595a.502.502 0 0 0-.897 0L5.779 5.841l-3.967.577a.5.5 0 0 0-.277.853l2.87 2.799-.677 3.951a.5.5 0 0 0 .725.527L8 12.682l3.548 1.866a.5.5 0 0 0 .725-.527l-.678-3.951 2.87-2.799a.499.499 0 0 0-.276-.853z" fill="#FEA250"></path></svg>
-															</span>
-														</div>
-													</div>
-													<p class="mt-5 text-left">“ Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. VPN always the best ”.</p>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div data-index="7" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true">
-										<div>
-											<div class="px-3 flex items-stretch" tabindex="-1">
-												<div class="border-2 border-gray-500 hover:border-orange-500 transition-all rounded-lg p-8 flex flex-col">
-													<div class="flex flex-col xl:flex-row w-full items-stretch xl:items-center">
-														<div class="flex order-2 xl:order-1">
-															<img src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2750%27%20height=%2750%27/%3e" alt=""/>
-															<div class="flex flex-col ml-5 text-left"><p class="text-lg text-black-600 capitalize">iezh Robert</p>
-																<p class="text-sm text-black-500 capitalize">Warsaw , Poland</p>
-															</div>
-														</div>
-														<div class="flex flex-none items-center ml-auto order-1 xl:order-2">
-															<p class="text-sm">4.5</p>
-															<span class="flex ml-4">
-																<svg class="h-4 w-4" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.19 6.418l-3.968-.577-1.774-3.595a.502.502 0 0 0-.897 0L5.779 5.841l-3.967.577a.5.5 0 0 0-.277.853l2.87 2.799-.677 3.951a.5.5 0 0 0 .725.527L8 12.682l3.548 1.866a.5.5 0 0 0 .725-.527l-.678-3.951 2.87-2.799a.499.499 0 0 0-.276-.853z" fill="#FEA250"></path></svg>
-															</span>
-														</div>
-													</div>
-													<p class="mt-5 text-left">“ Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. VPN always the best ”.</p></div>
 											</div>
 										</div>
 									</div>
