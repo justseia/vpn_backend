@@ -3,22 +3,12 @@
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
-|
-*/
-
-Route::get('/', \App\Http\Controllers\Home\IndexController::class)->name('home.index');
-
-Route::middleware('auth')->group(function () {
-    Route::get('/profile', \App\Http\Controllers\Profile\IndexController::class)->name('profile.index');
-    Route::get('/profile', \App\Http\Controllers\Profile\IndexController::class)->name('profile.index');
-});
+Route::get('/', [\App\Http\Controllers\AllController::class, 'home'])->name('home.index');
+Route::get('/about', [\App\Http\Controllers\AllController::class, 'about'])->name('about.index');
+Route::get('/service', [\App\Http\Controllers\AllController::class, 'service'])->name('service.index');
+Route::get('/price', [\App\Http\Controllers\AllController::class, 'price'])->name('price.index');
+Route::get('/blog', [\App\Http\Controllers\AllController::class, 'blog'])->name('blog.index');
+Route::get('/profile', [\App\Http\Controllers\AllController::class, 'profile'])->name('profile.index');
+Route::get('/pay', [\App\Http\Controllers\AllController::class, 'pay'])->name('pay.index');
 
 Auth::routes();

@@ -1,33 +1,54 @@
 @extends('layouts.app')
 
 @section('content')
-	<link href="{{asset('assets/css/tailwind.css')}}" rel="stylesheet"/>
-	<section class="py-52 flex items-center relative overflow-hidden">
-		<div class="container z-3">
-			<div class="flex justify-center">
-				<div class="max-w-[400px] w-full m-auto p-6 bg-white dark:bg-slate-900 shadow-md dark:shadow-gray-700 rounded-md">
-					<h5 class="my-6 text-xl font-semibold">Login</h5>
-					<form action="{{ route('login') }}" method="post" class="ltr:text-left rtl:text-right">
-						@csrf
-						<div class="grid grid-cols-1">
-							<div class="mb-4">
-								<label class="font-medium" for="LoginEmail">Email Address:</label>
-								<input name="email" id="LoginEmail" type="email" class="form-input mt-3" placeholder="reception@iitu.edu.kz">
-							</div>
-							<div class="mb-4">
-								<label class="font-medium" for="LoginPassword">Password:</label>
-								<input name="password" id="LoginPassword" type="password" class="form-input mt-3" placeholder="password">
-							</div>
-							<div class="mb-4">
-								<button type="submit" class="btn bg-orange-600 hover:bg-orange-700 text-white rounded-md w-full">Login</button>
-							</div>
-							<div class="text-center">
-								<span class="text-slate-400 ltr:mr-2 rtl:ml-2">Don't have an account ?</span> <a href="{{ route('register') }}" class="text-black dark:text-white font-bold">Sign Up</a>
-							</div>
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
-	</section>
+    <main class="main">
+        <div class="site-breadcrumb">
+            <div class="container">
+                <h2 class="breadcrumb-title">Login</h2>
+                <ul class="breadcrumb-menu">
+                    <li>
+                        <a href="{{ route('home.index') }}"><i class="far fa-home"></i> Home</a>
+                    </li>
+                    <li class="active">Login</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="login-area py-120">
+            <div class="container">
+                <div class="col-md-5 mx-auto">
+                    <div class="login-form">
+                        <div class="login-header">
+                            <h3>Login</h3>
+                            <p>login with your vpnox account</p>
+                        </div>
+                        <form action="{{ route('login') }}" method="post">
+                            @csrf
+                            <div class="form-group">
+                                <label>Email Address</label>
+                                <input name="email" type="email" class="form-control" placeholder="Your Email"/>
+                            </div>
+                            <div class="form-group">
+                                <label>Password</label>
+                                <input name="password" type="password" class="form-control" placeholder="Your Password"/>
+                            </div>
+                            <div class="d-flex justify-content-between mb-4">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value id="remember"/>
+                                    <label class="form-check-label" for="remember"> Remember Me </label>
+                                </div>
+                                <a href="#" class="forgot-pass">Forgot Password?</a>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <button type="submit" class="theme-btn">Login <i class="far fa-sign-in"></i></button>
+                            </div>
+                        </form>
+                        <div class="login-footer">
+                            <p>Don't have an account? <a href="{{ route('register') }}">Register.</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 @endsection

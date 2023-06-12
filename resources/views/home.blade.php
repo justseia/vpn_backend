@@ -1,245 +1,907 @@
 @extends('layouts.app')
 
 @section('content')
-	<div class="max-w-screen-xl mt-24 px-8 xl:px-16 mx-auto" id="about">
-		<div>
-			<div class="grid grid-flow-row sm:grid-flow-col grid-rows-2 md:grid-rows-1 sm:grid-cols-2 gap-8 py-6 sm:py-16">
-				<div class=" flex flex-col justify-center items-start row-start-2 sm:row-start-1">
-					<h1 class="text-3xl lg:text-4xl xl:text-5xl font-medium text-black-600 leading-normal">Want anything to be easy with <strong>VPN</strong>.</h1>
-					<p class="text-black-500 mt-4 mb-6">Provide a network for all your needs with ease and fun using VPN discover interesting features from us.</p>
-					<button class="py-3 lg:py-4 px-12 lg:px-16 text-white-500 font-semibold rounded-lg bg-orange-500 hover:shadow-orange-md transition-all outline-none undefined">Get Started</button>
-				</div>
-				<div class="flex w-full">
-					<div class="h-full w-full">
-						<img src="{{ asset('assets/img/hero_1.webp') }}" alt=""/>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="relative w-full flex">
-			<div class="rounded-lg w-full grid grid-flow-row sm:grid-flow-row grid-cols-1 sm:grid-cols-3 py-9 divide-y-2 sm:divide-y-0 sm:divide-x-2 divide-gray-100 bg-white-500 z-10">
-				<div class="flex items-center justify-start sm:justify-center py-4 sm:py-6 w-8/12 px-4 sm:w-auto mx-auto sm:mx-0">
-					<div class="flex mx-auto w-40 sm:w-auto">
-						<div class="flex items-center justify-center bg-orange-100 w-12 h-12 mr-6 rounded-full">
-							<img src="{{ asset('assets/icons/user.svg') }}" class="h-6 w-6" alt=""/>
-						</div>
-						<div class="flex flex-col"><p class="text-xl text-black-600 font-bold">390 +</p>
-							<p class="text-lg text-black-500">Users</p>
-						</div>
-					</div>
-				</div>
-				<div class="flex items-center justify-start sm:justify-center py-4 sm:py-6 w-8/12 px-4 sm:w-auto mx-auto sm:mx-0">
-					<div class="flex mx-auto w-40 sm:w-auto">
-						<div class="flex items-center justify-center bg-orange-100 w-12 h-12 mr-6 rounded-full">
-							<img src="{{ asset('assets/icons/location.svg') }}" class="h-6 w-6" alt=""/>
-						</div>
-						<div class="flex flex-col"><p class="text-xl text-black-600 font-bold">20 +</p>
-							<p class="text-lg text-black-500">Locations</p>
-						</div>
-					</div>
-				</div>
-				<div class="flex items-center justify-start sm:justify-center py-4 sm:py-6 w-8/12 px-4 sm:w-auto mx-auto sm:mx-0">
-					<div class="flex mx-auto w-40 sm:w-auto">
-						<div class="flex items-center justify-center bg-orange-100 w-12 h-12 mr-6 rounded-full">
-							<img src="{{ asset('assets/icons/server.svg') }}" class="h-6 w-6" alt=""/>
-						</div>
-						<div class="flex flex-col"><p class="text-xl text-black-600 font-bold">50 +</p>
-							<p class="text-lg text-black-500">Server</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="absolute bg-black-600 opacity-5 w-11/12 roudned-lg h-64 sm:h-48 top-0 mt-8 mx-auto left-0 right-0"></div>
-		</div>
-	</div>
+    <main class="main">
+        <div class="hero-section">
+            <div class="hero-wrapper">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 col-lg-6">
+                            <div class="hero-content">
+                                <h6 class="hero-sub-title wow animate__animated animate__fadeInUp" data-wow-duration="1s" data-wow-delay=".25s">Best VPN Service For You</h6>
+                                <h1 class="hero-title wow animate__animated animate__fadeInUp" data-wow-duration="1s" data-wow-delay=".50s">Fastest VPN and Proxy Solutions You Need</h1>
+                                <p class="wow animate__animated animate__fadeInUp" data-wow-duration="1s" data-wow-delay=".75s">There are many variations of passages available but the majority have suffered alteration in some form by injected humour or randomised words.</p>
+                                <div class="hero-btn wow animate__animated animate__fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
+                                    <a href="#" class="theme-btn">Get 7 Days Trail</a>
+                                    <a href="#" class="theme-btn theme-btn2">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6">
+                            <div class="hero-img">
+                                <img src="{{ asset('assets/img/slider/hero-1.png') }}" alt/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-shape">
+                    <img src="{{ asset('assets/img/shape/shape-1.png') }}" alt/>
+                </div>
+            </div>
+        </div>
 
+        <div class="feature-area pt-120">
+            <div class="container">
+                <div class="feature-area-wrapper">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="flaticon-fast"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h5>Fast And Secure</h5>
+                                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="feature-item active">
+                                <div class="feature-icon">
+                                    <i class="flaticon-financial"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h5>Affordable Pricing</h5>
+                                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="flaticon-support"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h5>27/4 Online Support</h5>
+                                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-	<div class="max-w-screen-xl mt-8 mb-6 sm:mt-14 sm:mb-14 px-6 sm:px-8 lg:px-16 mx-auto">
-		<div class="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-2 gap-8 p  y-8 my-12">
-			<div class="flex w-full justify-end">
-				<div class="h-full w-full p-4">
-					<img src="{{ asset('assets/img/hero_2.webp') }}" alt=""/>
-				</div>
-			</div>
-			<div>
-				<div class="flex flex-col items-end justify-center ml-auto w-full lg:w-9/12"><h3 class="text-3xl lg:text-4xl font-medium leading-relaxed text-black-600">We Provide Many Features You Can Use</h3>
-					<p class="my-2 text-black-500">You can explore the features that we provide with fun and have their own functions each feature.</p>
-					<ul class="text-black-500 self-start list-inside">
-						<li class="relative circle-check custom-list">
-							<img class="inline-block" src="{{ asset('assets/icons/checklist.svg') }}" alt=""/> Powerfull online protection.
-						</li>
-						<li class="relative circle-check custom-list">
-							<img class="inline-block" src="{{ asset('assets/icons/checklist.svg') }}" alt=""/> Internet without borders.
-						</li>
-						<li class="relative circle-check custom-list">
-							<img class="inline-block" src="{{ asset('assets/icons/checklist.svg') }}" alt=""/> Supercharged VPN
-						</li>
-						<li class="relative circle-check custom-list">
-							<img class="inline-block" src="{{ asset('assets/icons/checklist.svg') }}" alt=""/> No specific time limits.
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
+        <div class="about-area py-120">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="about-left">
+                            <div class="about-img">
+                                <img src="{{ asset('assets/img/about/01.png') }}" alt/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about-right">
+                            <div class="site-heading mb-3">
+                                <span class="site-title-tagline">About Us</span>
+                                <h2 class="site-title">We Offer The Fastest & Simplest VPN</h2>
+                            </div>
+                            <p class="about-text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even.</p>
+                            <div class="about-list-wrapper">
+                                <ul class="about-list list-unstyled">
+                                    <li>
+                                        <div class="icon"><span class="fas fa-check-circle"></span></div>
+                                        <div class="text">
+                                            <p>Take a look at our round up of the best shows</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon"><span class="fas fa-check-circle"></span></div>
+                                        <div class="text">
+                                            <p>It has survived not only five centuries</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon"><span class="fas fa-check-circle"></span></div>
+                                        <div class="text">
+                                            <p>Lorem Ipsum has been the ndustry standard dummy text</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="about.html" class="theme-btn">Discover More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <div class="service-area bg py-120">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 mx-auto">
+                        <div class="site-heading text-center">
+                            <span class="site-title-tagline">Services</span>
+                            <h2 class="site-title">What We Offer</h2>
+                            <div class="heading-divider"></div>
+                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="flaticon-web-development"></i>
+                            </div>
+                            <h3 class="service-title">
+                                <a href="#">Free Service</a>
+                            </h3>
+                            <p class="service-text">There are many variations of passages available but the majority have suffered.</p>
+                            <div class="service-arrow">
+                                <a href="#" class="service-read-btn">Learn More<i class="far fa-long-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service-item active">
+                            <div class="service-icon">
+                                <i class="flaticon-server-traffic"></i>
+                            </div>
+                            <h3 class="service-title">
+                                <a href="#">Premium Service</a>
+                            </h3>
+                            <p class="service-text">There are many variations of passages available but the majority have suffered.</p>
+                            <div class="service-arrow">
+                                <a href="#" class="service-read-btn">Learn More<i class="far fa-long-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="flaticon-project-management"></i>
+                            </div>
+                            <h3 class="service-title">
+                                <a href="#">Gigabit Service</a>
+                            </h3>
+                            <p class="service-text">There are many variations of passages available but the majority have suffered.</p>
+                            <div class="service-arrow">
+                                <a href="#" class="service-read-btn">Learn More<i class="far fa-long-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="flaticon-web-hosting"></i>
+                            </div>
+                            <h3 class="service-title">
+                                <a href="#">VPN For Business</a>
+                            </h3>
+                            <p class="service-text">There are many variations of passages available but the majority have suffered.</p>
+                            <div class="service-arrow">
+                                <a href="#" class="service-read-btn">Learn More<i class="far fa-long-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="flaticon-startup"></i>
+                            </div>
+                            <h3 class="service-title">
+                                <a href="#">Stream Service</a>
+                            </h3>
+                            <p class="service-text">There are many variations of passages available but the majority have suffered.</p>
+                            <div class="service-arrow">
+                                <a href="#" class="service-read-btn">Learn More<i class="far fa-long-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="flaticon-repair"></i>
+                            </div>
+                            <h3 class="service-title">
+                                <a href="#">VPN For Teams</a>
+                            </h3>
+                            <p class="service-text">There are many variations of passages available but the majority have suffered.</p>
+                            <div class="service-arrow">
+                                <a href="#" class="service-read-btn">Learn More<i class="far fa-long-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-	<div class="bg-gradient-to-b from-white-300 to-white-500 w-full py-14" id="pricing">
-		<div class="max-w-screen-xl  px-6 sm:px-8 lg:px-16 mx-auto flex flex-col w-full text-center justify-center">
-			<div class="flex flex-col w-full">
-				<div><h3 class="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-relaxed">Choose Your Plan</h3>
-					<p class="leading-normal w-10/12 sm:w-7/12 lg:w-6/12 mx-auto my-2 text-center">Let's choose the package that is best for you and explore it happily and cheerfully.</p></div>
-				<div class="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-12 py-8 lg:py-12 px-6 sm:px-0 lg:px-6">
-					<div class="flex justify-center">
-						<div class="flex flex-col justify-center items-center border-2 border-gray-500 rounded-xl py-4 px-6 lg:px-12 xl:px-20">
-							<div class="p-4 lg:p-0 mt-6 lg:mt-16">
-								<img src="{{ asset('assets/img/plan_1.webp') }}" alt=""/>
-							</div>
-							<p class="text-lg text-black-600 font-medium capitalize my-2 sm:my-7">Free Plan</p>
-							<ul class="flex flex-col list-inside pl-6 xl:pl-0 items-start justify-start text-left text-black-500 flex-grow">
-								<li class="relative check custom-list my-2">Unlimited Bandwitch</li>
-								<li class="relative check custom-list my-2">Encrypted Connection</li>
-								<li class="relative check custom-list my-2">No Traffic Logs</li>
-								<li class="relative check custom-list my-2">Works on All Devices</li>
-							</ul>
-							<div class="flex flex-col w-full justify-center mb-8 flex-none mt-12">
-								<p class="text-2xl text-black-600 text-center mb-4">Free</p>
-								<button class="font-medium tracking-wide py-2 px-5 sm:px-8 border border-orange-500 text-orange-500 bg-white-500 outline-none rounded-l-full rounded-r-full capitalize hover:bg-orange-500 hover:text-white-500 transition-all hover:shadow-orange">Select</button>
-							</div>
-						</div>
-					</div>
-					<div class="flex justify-center">
-						<div class="flex flex-col justify-center items-center border-2 border-gray-500 rounded-xl py-4 px-6 lg:px-12 xl:px-20">
-							<div class="p-4 lg:p-0 mt-6 lg:mt-16">
-								<img src="{{ asset('assets/img/plan_2.webp') }}" alt=""/>
-							</div>
-							<p class="text-lg text-black-600 font-medium capitalize my-2 sm:my-7">Standard Plan </p>
-							<ul class="flex flex-col list-inside pl-6 xl:pl-0 items-start justify-start text-left text-black-500 flex-grow">
-								<li class="relative check custom-list my-2">Unlimited Bandwitch</li>
-								<li class="relative check custom-list my-2">Encrypted Connection</li>
-								<li class="relative check custom-list my-2">No Traffic Logs</li>
-								<li class="relative check custom-list my-2">Works on All Devices</li>
-								<li class="relative check custom-list my-2">Connect Anyware</li>
-							</ul>
-							<div class="flex flex-col w-full justify-center mb-8 flex-none mt-12">
-								<p class="text-2xl text-black-600 text-center mb-4">$9 <span class="text-black-500">/ mo</span></p>
-								<button class="font-medium tracking-wide py-2 px-5 sm:px-8 border border-orange-500 text-orange-500 bg-white-500 outline-none rounded-l-full rounded-r-full capitalize hover:bg-orange-500 hover:text-white-500 transition-all hover:shadow-orange">Select</button>
-							</div>
-						</div>
-					</div>
-					<div class="flex justify-center">
-						<div class="flex flex-col justify-center items-center border-2 border-gray-500 rounded-xl py-4 px-6 lg:px-12 xl:px-20">
-							<div class="p-4 lg:p-0 mt-6 lg:mt-16">
-								<img src="{{ asset('assets/img/plan_3.webp') }}" alt=""/>
-							</div>
-							<p class="text-lg text-black-600 font-medium capitalize my-2 sm:my-7">Premium Plan </p>
-							<ul class="flex flex-col list-inside pl-6 xl:pl-0 items-start justify-start text-left text-black-500 flex-grow">
-								<li class="relative check custom-list my-2">Unlimited Bandwitch</li>
-								<li class="relative check custom-list my-2">Encrypted Connection</li>
-								<li class="relative check custom-list my-2">No Traffic Logs</li>
-								<li class="relative check custom-list my-2">Works on All Devices</li>
-								<li class="relative check custom-list my-2">Connect Anyware</li>
-								<li class="relative check custom-list my-2">Get New Features</li>
-							</ul>
-							<div class="flex flex-col w-full justify-center mb-8 flex-none mt-12">
-								<p class="text-2xl text-black-600 text-center mb-4">$12 <span class="text-black-500">/ mo</span></p>
-								<button class="font-medium tracking-wide py-2 px-5 sm:px-8 border border-orange-500 text-orange-500 bg-white-500 outline-none rounded-l-full rounded-r-full capitalize hover:bg-orange-500 hover:text-white-500 transition-all hover:shadow-orange">Select</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="flex flex-col w-full my-16">
-				<div><h3 class="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-relaxed w-9/12 sm:w-6/12 lg:w-4/12 mx-auto">Huge Global Network of Fast VPN </h3>
-					<p class="leading-normal  mx-auto my-2 w-10/12 sm:w-7/12 lg:w-6/12">See VPN everywhere to make it easier for you when you move locations.</p></div>
-				<div>
-					<div class="py-12 w-full px-8 mt-16">
-						<img src="{{ asset('assets/icons/map.svg') }}" alt="">
-					</div>
-				</div>
-				<div>
-					<div class="w-full flex justify-evenly items-center mt-4 flex-wrap lg:flex-nowrap">
-						<img src="{{ asset('assets/img/amazon.png') }}" class="h-14 w-auto mt-4 lg:mt-2" alt="">
-						<img src="{{ asset('assets/img/netflix.png') }}" class="h-14 w-auto mt-2 lg:mt-0" alt="">
-						<img src="{{ asset('assets/img/reddit.png') }}" class="h-12 w-auto mt-2 lg:mt-0" alt="">
-						<img src="{{ asset('assets/img/discord.png') }}" class="h-14 w-auto mt-2 lg:mt-0" alt="">
-						<img src="{{ asset('assets/img/spotify.png') }}" class="h-12 w-auto mt-2 lg:mt-0" alt="">
-					</div>
-				</div>
-			</div>
-			<div class="flex flex-col w-full my-16" id="testimoni">
-				<div><h3 class="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-normal w-9/12 sm: lg:w-4/12 mx-auto">Trusted by Thousands of Happy Customer </h3>
-					<p class="leading-normal mx-auto mb-2 mt-4 w-10/12 sm:w-7/12 lg:w-6/12">These are the stories of our customers who have joined us with great pleasure when using this crazy feature.</p></div>
-				<div class="w-full flex flex-col py-12">
-					<div>
-						<div class="slick-slider flex items-stretch justify-items-stretch slick-initialized" dir="ltr">
-							<div class="slick-list">
-								<div class="slick-track">
-									<div class="slick-slide slick-cloned">
-										<div>
-											<div class="px-3 flex items-stretch" tabindex="-1">
-												<div class="border-2 border-gray-500 hover:border-orange-500 transition-all rounded-lg p-8 flex flex-col">
-													<div class="flex flex-col xl:flex-row w-full items-stretch xl:items-center">
-														<div class="flex order-2 xl:order-1">
-															<img src="{{ asset('assets/img/people.webp') }}" alt=""/>
-															<div class="flex flex-col ml-5 text-left"><p class="text-lg text-black-600 capitalize">iezh Robert</p>
-																<p class="text-sm text-black-500 capitalize">Warsaw , Poland</p>
-															</div>
-														</div>
-														<div class="flex flex-none items-center ml-auto order-1 xl:order-2">
-															<p class="text-sm">4.5</p>
-															<span class="flex ml-4">
-																<svg class="h-4 w-4" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.19 6.418l-3.968-.577-1.774-3.595a.502.502 0 0 0-.897 0L5.779 5.841l-3.967.577a.5.5 0 0 0-.277.853l2.87 2.799-.677 3.951a.5.5 0 0 0 .725.527L8 12.682l3.548 1.866a.5.5 0 0 0 .725-.527l-.678-3.951 2.87-2.799a.499.499 0 0 0-.276-.853z" fill="#FEA250"></path></svg>
-															</span>
-														</div>
-													</div>
-													<p class="mt-5 text-left">“ Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. VPN always the best ”.</p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<ul class="slick-dots w-max absolute mt-20 ">
-								<li class="slick-active">
-									<a class="">
-										<span class="mx-2 rounded-l-full rounded-r-full h-4 w-4 block cursor-pointer transition-all"></span>
-									</a>
-								</li>
-								<li class="">
-									<a class="">
-										<span class="mx-2 rounded-l-full rounded-r-full h-4 w-4 block cursor-pointer transition-all"></span>
-									</a>
-								</li>
-							</ul>
-						</div>
-						<div class="flex w-full items-center justify-end">
-							<div class="flex flex-none justify-between w-auto mt-14">
-								<div class="mx-4 flex items-center justify-center h-14 w-14 rounded-full bg-white border-orange-500 border hover:bg-orange-500 hover:text-white-500 transition-all text-orange-500 cursor-pointer">
-									<svg class="h-6 w-6 " fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-										<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
-									</svg>
-								</div>
-								<div class="flex items-center justify-center h-14 w-14 rounded-full bg-white border-orange-500 border hover:bg-orange-500 hover:text-white-500 transition-all text-orange-500 cursor-pointer">
-									<svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-										<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-									</svg>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="relative w-full mt-16">
-					<div>
-						<div class="absolute rounded-xl  py-8 sm:py-14 px-6 sm:px-12 lg:px-16 w-full flex flex-col sm:flex-row justify-between items-center z-10 bg-white-500">
-							<div class="flex flex-col text-left w-10/12 sm:w-7/12 lg:w-5/12 mb-6 sm:mb-0"><h5 class="text-black-600 text-xl sm:text-2xl lg:text-3xl leading-relaxed font-medium">Subscribe Now for <br> Get Special Features!</h5>
-								<p>Let's subscribe with us and find the fun.</p></div>
-							<button class="py-3 lg:py-4 px-12 lg:px-16 text-white-500 font-semibold rounded-lg bg-orange-500 hover:shadow-orange-md transition-all outline-none undefined">Get Started</button>
-						</div>
-						<div class="absolute bg-black-600 opacity-5 w-11/12 roudned-lg h-60 sm:h-56 top-0 mt-8 mx-auto left-0 right-0"></div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+        <div class="pricing-area py-120">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 mx-auto">
+                        <div class="site-heading text-center">
+                            <span class="site-title-tagline">Pricing</span>
+                            <h2 class="site-title">Pricing Plan</h2>
+                            <div class="heading-divider"></div>
+                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="pricing-item">
+                            <div class="pricing-header">
+                                <h5>Basic</h5>
+                            </div>
+                            <div class="pricing-save">10% Saved</div>
+                            <div class="pricing-amount">
+                                <strong>$59</strong>
+                            </div>
+                            <div class="pricing-amount-type">
+                                <span>/Yearly</span>
+                            </div>
+                            <div class="pricing-feature">
+                                <ul>
+                                    <li><i class="far fa-check"></i> No Logs Policy</li>
+                                    <li><i class="far fa-check"></i> Onion Over VPN</li>
+                                    <li><i class="far fa-check"></i> Double Encryption</li>
+                                    <li><i class="far fa-check"></i> Global Network</li>
+                                    <li><i class="far fa-check"></i> 24/7 Support</li>
+                                </ul>
+                            </div>
+                            <div class="pricing-billed">
+                                <span><del>$340.50</del> $180.59 Billed</span>
+                                <p>Every 1 Years</p>
+                            </div>
+                            <div class="pricing-footer">
+                                <a href="#" class="theme-btn">Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="pricing-item">
+                            <div class="pricing-header">
+                                <h5>Standard</h5>
+                            </div>
+                            <div class="pricing-save">10% Saved</div>
+                            <div class="pricing-amount">
+                                <strong>$110</strong>
+                            </div>
+                            <div class="pricing-amount-type">
+                                <span>/Yearly</span>
+                            </div>
+                            <div class="pricing-feature">
+                                <ul>
+                                    <li><i class="far fa-check"></i> No Logs Policy</li>
+                                    <li><i class="far fa-check"></i> Onion Over VPN</li>
+                                    <li><i class="far fa-check"></i> Double Encryption</li>
+                                    <li><i class="far fa-check"></i> Global Network</li>
+                                    <li><i class="far fa-check"></i> 24/7 Support</li>
+                                </ul>
+                            </div>
+                            <div class="pricing-billed">
+                                <span><del>$340.50</del> $180.59 Billed</span>
+                                <p>Every 1 Years</p>
+                            </div>
+                            <div class="pricing-footer">
+                                <a href="#" class="theme-btn">Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="pricing-item">
+                            <div class="pricing-ribbon">Popular</div>
+                            <div class="pricing-header">
+                                <h5>Premium</h5>
+                            </div>
+                            <div class="pricing-save">10% Saved</div>
+                            <div class="pricing-amount">
+                                <strong>$156</strong>
+                            </div>
+                            <div class="pricing-amount-type">
+                                <span>/Yearly</span>
+                            </div>
+                            <div class="pricing-feature">
+                                <ul>
+                                    <li><i class="far fa-check"></i> No Logs Policy</li>
+                                    <li><i class="far fa-check"></i> Onion Over VPN</li>
+                                    <li><i class="far fa-check"></i> Double Encryption</li>
+                                    <li><i class="far fa-check"></i> Global Network</li>
+                                    <li><i class="far fa-check"></i> 24/7 Support</li>
+                                </ul>
+                            </div>
+                            <div class="pricing-billed">
+                                <span><del>$340.50</del> $180.59 Billed</span>
+                                <p>Every 1 Years</p>
+                            </div>
+                            <div class="pricing-footer">
+                                <a href="#" class="theme-btn">Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="pricing-item">
+                            <div class="pricing-header">
+                                <h5>Gold</h5>
+                            </div>
+                            <div class="pricing-save">10% Saved</div>
+                            <div class="pricing-amount">
+                                <strong>$267</strong>
+                            </div>
+                            <div class="pricing-amount-type">
+                                <span>/Yearly</span>
+                            </div>
+                            <div class="pricing-feature">
+                                <ul>
+                                    <li><i class="far fa-check"></i> No Logs Policy</li>
+                                    <li><i class="far fa-check"></i> Onion Over VPN</li>
+                                    <li><i class="far fa-check"></i> Double Encryption</li>
+                                    <li><i class="far fa-check"></i> Global Network</li>
+                                    <li><i class="far fa-check"></i> 24/7 Support</li>
+                                </ul>
+                            </div>
+                            <div class="pricing-billed">
+                                <span><del>$340.50</del> $180.59 Billed</span>
+                                <p>Every 1 Years</p>
+                            </div>
+                            <div class="pricing-footer">
+                                <a href="#" class="theme-btn">Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pricing-payment">
+                    <p>30-Day Money Back Guarantee For New Purchases</p>
+                    <img src="{{ asset('assets/img/payment/payment.png') }}" alt/>
+                </div>
+            </div>
+        </div>
+
+        <div class="global-location py-120">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 mx-auto">
+                        <div class="site-heading text-center">
+                            <span class="site-title-tagline">Location</span>
+                            <h2 class="site-title text-white">Global Location</h2>
+                            <div class="heading-divider"></div>
+                            <p class="text-white">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="g-location-map">
+                            <img src="{{ asset('assets/img/location/map.svg') }}" alt="map-image"/>
+                            <div class="map-item item-1">
+                                <span class="circle-point"></span>
+                                <div class="map-popup">
+                                    <h5>Canada</h5>
+                                </div>
+                            </div>
+                            <div class="map-item item-2">
+                                <span class="circle-point"></span>
+                                <div class="map-popup">
+                                    <h5>Australia</h5>
+                                </div>
+                            </div>
+                            <div class="map-item item-3">
+                                <span class="circle-point"></span>
+                                <div class="map-popup">
+                                    <h5>England</h5>
+                                </div>
+                            </div>
+                            <div class="map-item item-4 active">
+                                <span class="circle-point"></span>
+                                <div class="map-popup">
+                                    <h5>United States</h5>
+                                </div>
+                            </div>
+                            <div class="map-item item-5">
+                                <span class="circle-point"></span>
+                                <div class="map-popup">
+                                    <h5>Russia</h5>
+                                </div>
+                            </div>
+                            <div class="map-item item-6">
+                                <span class="circle-point"></span>
+                                <div class="map-popup">
+                                    <h5>Nigeria</h5>
+                                </div>
+                            </div>
+                            <div class="map-item item-7">
+                                <span class="circle-point"></span>
+                                <div class="map-popup">
+                                    <h5>Finland</h5>
+                                </div>
+                            </div>
+                            <div class="map-item item-8">
+                                <span class="circle-point"></span>
+                                <div class="map-popup">
+                                    <h5>Brazil</h5>
+                                </div>
+                            </div>
+                            <div class="map-item item-9">
+                                <span class="circle-point"></span>
+                                <div class="map-popup">
+                                    <h5>Spain</h5>
+                                </div>
+                            </div>
+                            <div class="map-item item-10">
+                                <span class="circle-point"></span>
+                                <div class="map-popup">
+                                    <h5>Italy</h5>
+                                </div>
+                            </div>
+                            <div class="map-item item-11">
+                                <span class="circle-point"></span>
+                                <div class="map-popup">
+                                    <h5>Quatar</h5>
+                                </div>
+                            </div>
+                            <div class="map-item item-12">
+                                <span class="circle-point"></span>
+                                <div class="map-popup">
+                                    <h5>Ukraine</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="choose-area bg py-120">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="choose-content">
+                            <div class="site-heading mb-3">
+                                <span class="site-title-tagline">Why Choose Us</span>
+                                <h2 class="site-title my-3">Best VPN And Proxy Service For You</h2>
+                            </div>
+                            <p class="mb-4">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even.</p>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <ul>
+                                        <li>
+                                            <h5>Ensure Privacy & Security</h5>
+                                        </li>
+                                        <li>
+                                            <h5>Streaming Access & Speed</h5>
+                                        </li>
+                                        <li>
+                                            <h5>Multiple VPN Network</h5>
+                                        </li>
+                                        <li>
+                                            <h5>Expert Support Team</h5>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul>
+                                        <li>
+                                            <h5>Fully Encrypted Internet</h5>
+                                        </li>
+                                        <li>
+                                            <h5>Block Malicious Content</h5>
+                                        </li>
+                                        <li>
+                                            <h5>Access Restricted Websites</h5>
+                                        </li>
+                                        <li>
+                                            <h5>Money Back Guarantee</h5>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="choose-img">
+                            <img src="{{ asset('assets/img/choose/01.png') }}" alt/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="video-area py-120">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-12">
+                        <div class="video-wrapper">
+                            <img src="{{ asset('assets/img/video/video.png') }}" alt="Banner Video"/>
+                            <a class="play-btn popup-youtube" href="https://www.youtube.com/watch?v=ckHzmP1evNU">
+                                <i class="fas fa-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="faq-area pb-120">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="faq-left">
+                            <div class="site-heading mb-3">
+                                <span class="site-title-tagline">Faq's</span>
+                                <h2 class="site-title my-3">General frequently asked questions</h2>
+                            </div>
+                            <p class="about-text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even.</p>
+                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                            <a href="#" class="theme-btn mt-5">Ask Question</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <span><i class="far fa-question"></i></span> Do I Need A Business Plan ?
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">We denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        <span><i class="far fa-question"></i></span> How Long Should A Business Plan Be ?
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">We denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        <span><i class="far fa-question"></i></span> What Payment Gateway You Support ?
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">We denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cta-area">
+            <div class="container">
+                <div class="row">
+                    <div class="cta-content">
+                        <h5>We Offer Quality Service</h5>
+                        <h1>Download Your Free 7 Days Trial</h1>
+                        <p>
+                            It is a long established fact that a reader will be distracted by the readable content <br/>
+                            of a page when looking at its layout.
+                        </p>
+                        <a href="#" class="theme-btn mt-5">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="download-area py-120">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="download-img">
+                            <img src="{{ asset('assets/img/download/01.png') }}" alt/>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="download-content">
+                            <div class="site-heading mb-3">
+                                <span class="site-title-tagline">Download</span>
+                                <h2 class="site-title my-3">Download Your App</h2>
+                            </div>
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even.</p>
+                            <div class="download-now">
+                                <h5>Available On:</h5>
+                                <a href="#" class="apple-store"><i class="fab fa-apple"></i></a>
+                                <a href="#" class="google-play"><i class="fab fa-google-play"></i></a>
+                                <a href="#" class="windows"><i class="fab fa-windows"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="testimonial-area bg py-120">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 mx-auto">
+                        <div class="site-heading text-center">
+                            <span class="site-title-tagline">Testimonials</span>
+                            <h2 class="site-title">What Client Say's</h2>
+                            <div class="heading-divider"></div>
+                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slider owl-carousel owl-theme">
+                    <div class="testimonial-single">
+                        <div class="testimonial-quote">
+                            <span class="testimonial-quote-icon"><i class="fas fa-quote-right"></i></span>
+                            <div class="testimonial-rate">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>There are many variations of passages available but the majority have suffered alteration in some form.</p>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="testimonial-author-img">
+                                <img src="{{ asset('assets/img/testimonial/01.jpg') }}" alt/>
+                            </div>
+                            <div class="testimonial-author-info">
+                                <h4>Sylvia H Green</h4>
+                                <p>Founder And CEO</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-single">
+                        <div class="testimonial-quote">
+                            <span class="testimonial-quote-icon"><i class="fas fa-quote-right"></i></span>
+                            <div class="testimonial-rate">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>There are many variations of passages available but the majority have suffered alteration in some form.</p>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="testimonial-author-img">
+                                <img src="{{ asset('assets/img/testimonial/02.jpg') }}" alt/>
+                            </div>
+                            <div class="testimonial-author-info">
+                                <h4>Gordon D Novak</h4>
+                                <p>Founder And CEO</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-single">
+                        <div class="testimonial-quote">
+                            <span class="testimonial-quote-icon"><i class="fas fa-quote-right"></i></span>
+                            <div class="testimonial-rate">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>There are many variations of passages available but the majority have suffered alteration in some form.</p>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="testimonial-author-img">
+                                <img src="{{ asset('assets/img/testimonial/03.jpg') }}" alt/>
+                            </div>
+                            <div class="testimonial-author-info">
+                                <h4>Reid E Butt</h4>
+                                <p>Founder And CEO</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-single">
+                        <div class="testimonial-quote">
+                            <span class="testimonial-quote-icon"><i class="fas fa-quote-right"></i></span>
+                            <div class="testimonial-rate">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>There are many variations of passages available but the majority have suffered alteration in some form.</p>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="testimonial-author-img">
+                                <img src="{{ asset('assets/img/testimonial/04.jpg') }}" alt/>
+                            </div>
+                            <div class="testimonial-author-info">
+                                <h4>Parker Jimenez</h4>
+                                <p>Founder And CEO</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="team-area py-120">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 mx-auto">
+                        <div class="site-heading text-center">
+                            <span class="site-title-tagline">Team</span>
+                            <h2 class="site-title">Meet Experts</h2>
+                            <div class="heading-divider"></div>
+                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                        <div class="team-item">
+                            <img src="{{ asset('assets/img/team/01.jpg') }}" alt="thumb"/>
+                            <div class="team-social">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                            <div class="team-content">
+                                <div class="team-bio">
+                                    <h5><a href="#">Malissa Fierro</a></h5>
+                                    <span>Developer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                        <div class="team-item">
+                            <img src="{{ asset('assets/img/team/02.jpg') }}" alt="thumb"/>
+                            <div class="team-social">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                            <div class="team-content">
+                                <div class="team-bio">
+                                    <h5><a href="#">Arron Rodri</a></h5>
+                                    <span>Senior Designer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                        <div class="team-item active">
+                            <img src="{{ asset('assets/img/team/03.jpg') }}" alt="thumb"/>
+                            <div class="team-social">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                            <div class="team-content">
+                                <div class="team-bio">
+                                    <h5><a href="#">Chad Smith</a></h5>
+                                    <span>Digital Marketer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                        <div class="team-item">
+                            <img src="{{ asset('assets/img/team/04.jpg') }}" alt="thumb"/>
+                            <div class="team-social">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                            <div class="team-content">
+                                <div class="team-bio">
+                                    <h5><a href="#">Tony Pinto</a></h5>
+                                    <span>CEO & Founder</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="blog-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 mx-auto">
+                        <div class="site-heading text-center">
+                            <span class="site-title-tagline">Our Blog</span>
+                            <h2 class="site-title">News & Blog</h2>
+                            <div class="heading-divider"></div>
+                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="blog-item">
+                            <div class="blog-item-img">
+                                <img src="{{ asset('assets/img/blog/01.jpg') }}" alt="Thumb"/>
+                            </div>
+                            <div class="blog-item-info">
+                                <div class="blog-item-meta">
+                                    <ul>
+                                        <li>
+                                            <a href="#"><i class="far fa-user-circle"></i> By Alicia Davis</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="far fa-calendar-alt"></i> May 10, 2023</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <h4 class="blog-title">
+                                    <a href="#">There are many variates of passages alteration</a>
+                                </h4>
+                                <p>At vero eos et accusamus et iusto odio ducimus qui blanditiis deleniti atque</p>
+                                <a class="theme-btn" href="#">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="blog-item">
+                            <div class="blog-item-img">
+                                <img src="{{ asset('assets/img/blog/02.jpg') }}" alt="Thumb"/>
+                            </div>
+                            <div class="blog-item-info">
+                                <div class="blog-item-meta">
+                                    <ul>
+                                        <li>
+                                            <a href="#"><i class="far fa-user-circle"></i> By Alicia Davis</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="far fa-calendar-alt"></i> May 10, 2023</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <h4 class="blog-title">
+                                    <a href="#">There are many variates of passages alteration</a>
+                                </h4>
+                                <p>At vero eos et accusamus et iusto odio ducimus qui blanditiis deleniti atque</p>
+                                <a class="theme-btn" href="#">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="blog-item">
+                            <div class="blog-item-img">
+                                <img src="{{ asset('assets/img/blog/03.jpg') }}" alt="Thumb"/>
+                            </div>
+                            <div class="blog-item-info">
+                                <div class="blog-item-meta">
+                                    <ul>
+                                        <li>
+                                            <a href="#"><i class="far fa-user-circle"></i> By Alicia Davis</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="far fa-calendar-alt"></i> May 10, 2023</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <h4 class="blog-title">
+                                    <a href="#">There are many variates of passages alteration</a>
+                                </h4>
+                                <p>At vero eos et accusamus et iusto odio ducimus qui blanditiis deleniti atque</p>
+                                <a class="theme-btn" href="#">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="partner-area pt-70 pb-70">
+            <div class="container">
+                <div class="partner-wrapper partner-slider owl-carousel owl-theme">
+                    <img src="{{ asset('assets/img/partner/01.png') }}" alt="thumb"/>
+                    <img src="{{ asset('assets/img/partner/02.png') }}" alt="thumb"/>
+                    <img src="{{ asset('assets/img/partner/03.png') }}" alt="thumb"/>
+                    <img src="{{ asset('assets/img/partner/04.png') }}" alt="thumb"/>
+                    <img src="{{ asset('assets/img/partner/05.png') }}" alt="thumb"/>
+                    <img src="{{ asset('assets/img/partner/06.png') }}" alt="thumb"/>
+                </div>
+            </div>
+        </div>
+    </main>
 @endsection

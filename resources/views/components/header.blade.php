@@ -1,21 +1,46 @@
-<header class="fixed top-0 w-full z-30 bg-white transition-all pt-4">
-	<nav class="max-w-screen-xl px-6 sm:px-8 lg:px-16 mx-auto grid grid-flow-col py-3 sm:py-4">
-		<div class="col-start-1 col-end-2 flex items-center">
-			<a href="{{ route('home.index') }}">
-				<img class="h-8 w-auto" src="{{ asset('assets/icons/logo.svg') }}" alt="">
-			</a>
-		</div>
-		<ul class="hidden lg:flex col-start-4 col-end-8 text-black-500  items-center">
-			<a class="px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative text-black-500 hover:text-orange-500">About</a>
-			<a class="px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative text-black-500 hover:text-orange-500">Feature</a>
-			<a class="px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative text-black-500 hover:text-orange-500">Pricing</a>
-			<a class="px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative text-black-500 hover:text-orange-500">Testimonial</a>
-		</ul>
-		<div class="col-start-10 col-end-12 font-medium flex justify-end items-center">
-			@if(!auth()->user())
-				<a class="text-black-600 mx-2 sm:mx-4 capitalize tracking-wide hover:text-orange-500 transition-all" href="{{ route('login') }}">Sign In</a>
-				<a class="font-medium tracking-wide py-2 px-5 sm:px-8 border border-orange-500 text-orange-500 bg-white-500 outline-none rounded-l-full rounded-r-full capitalize hover:bg-orange-500 hover:text-white-500 transition-all hover:shadow-orange" href="{{ route('register') }}">Sign Up</a>
-			@endif
-		</div>
-	</nav>
+<header class="header">
+    <div class="main-navigation">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="{{ route('home.index') }}">
+                    <img src="{{ asset('assets/img/logo/logo.png') }}" class="logo-display" alt="logo"/>
+                    <img src="{{ asset('assets/img/logo/logo-dark.png') }}" class="logo-scrolled" alt="logo"/>
+                </a>
+                <div class="mobile-menu-right">
+                    <a href="#" class="mobile-search-btn search-box-outer"><i class="far fa-search"></i></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"><i class="far fa-bars"></i></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="main_nav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('home.index') }}">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('about.index') }}">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('service.index') }}">Service</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('price.index') }}">Price</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('blog.index') }}">Blog</a>
+                        </li>
+                    </ul>
+                    <div class="header-nav-right">
+                        <div class="header-btn">
+                            @auth
+                                <a href="{{ route('profile.index') }}" class="theme-btn">Profile</a>
+                            @else
+                                <a href="{{ route('login') }}" class="theme-btn">Login</a>
+                            @endif
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
 </header>

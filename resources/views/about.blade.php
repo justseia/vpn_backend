@@ -1,117 +1,301 @@
 @extends('layouts.app')
 
 @section('content')
-	<div class="container-fluid relative mt-20">
-		<div class="grid grid-cols-1">
-			<div class="w-full leading-[0] border-0">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d375.7269095591244!2d76.90986904320448!3d43.23502854823706!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3883692f027581ad%3A0x2426740f56437e63!2z0KXQsNC70YvSm9Cw0YDQsNC70YvSmyDQsNKb0L_QsNGA0LDRgtGC0YvSmyDRgtC10YXQvdC-0LvQvtCz0LjRj9C70LDRgCDRg9C90LjQstC10YDRgdC40YLQtdGC0ZY!5e0!3m2!1sen!2sin!4v1680833966487!5m2!1sen!2sin" style="border:0" class="w-full h-[500px]" allowfullscreen></iframe>
-			</div>
-		</div>
-	</div>
+    <main class="main">
+        <div class="site-breadcrumb">
+            <div class="container">
+                <h2 class="breadcrumb-title">About Us</h2>
+                <ul class="breadcrumb-menu">
+                    <li>
+                        <a href="{{ route('home.index') }}"><i class="far fa-home"></i> Home</a>
+                    </li>
+                    <li class="active">About Us</li>
+                </ul>
+            </div>
+        </div>
 
-	<section class="relative lg:py-24 py-16">
-		<div class="container">
-			<div class="grid md:grid-cols-12 grid-cols-1 items-center gap-[30px]">
-				<div class="lg:col-span-7 md:col-span-6">
-					<img src="{{asset('assets/images/svg/contact.svg')}}" alt="">
-				</div>
+        <div class="about-area py-120">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="about-left">
+                            <div class="about-img">
+                                <img src="{{ asset('assets/img/about/01.png') }}" alt />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about-right">
+                            <div class="site-heading mb-3">
+                                <span class="site-title-tagline">About Us</span>
+                                <h2 class="site-title">We Offer The Fastest & Simplest VPN</h2>
+                            </div>
+                            <p class="about-text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even.</p>
+                            <div class="about-list-wrapper">
+                                <ul class="about-list list-unstyled">
+                                    <li>
+                                        <div class="icon"><span class="fas fa-check-circle"></span></div>
+                                        <div class="text">
+                                            <p>Take a look at our round up of the best shows</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon"><span class="fas fa-check-circle"></span></div>
+                                        <div class="text">
+                                            <p>It has survived not only five centuries</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon"><span class="fas fa-check-circle"></span></div>
+                                        <div class="text">
+                                            <p>Lorem Ipsum has been the ndustry standard dummy text</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="theme-btn">Discover More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-				<div class="lg:col-span-5 md:col-span-6">
-					<div class="lg:ml-5">
-						<div class="bg-white dark:bg-slate-900 rounded-md shadow dark:shadow-gray-700 p-6">
-							<h3 class="mb-6 text-2xl leading-normal font-medium">Get in touch !</h3>
+        <div class="counter-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="counter-box">
+                            <div class="icon"><i class="flaticon-support"></i></div>
+                            <span class="counter" data-count="+" data-to="500" data-speed="3000">500</span>
+                            <h6 class="title">+ Total Support</h6>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="counter-box">
+                            <div class="icon"><i class="flaticon-happy"></i></div>
+                            <span class="counter" data-count="+" data-to="250" data-speed="3000">250</span>
+                            <h6 class="title">+ Satisfied Clients</h6>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="counter-box">
+                            <div class="icon"><i class="flaticon-achievement"></i></div>
+                            <span class="counter" data-count="+" data-to="120" data-speed="3000">120</span>
+                            <h6 class="title">+ Active Experts</h6>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="counter-box">
+                            <div class="icon"><i class="flaticon-trophy"></i></div>
+                            <span class="counter" data-count="+" data-to="300" data-speed="3000">300</span>
+                            <h6 class="title">+ Win Awards</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-							<form method="post" name="myForm" id="myForm" onsubmit="return validateForm()">
-								<p class="mb-0" id="error-msg"></p>
-								<div id="simple-msg"></div>
-								<div class="grid lg:grid-cols-12 lg:gap-6">
-									<div class="lg:col-span-6 mb-5">
-										<label for="name" class="font-medium">Your Name:</label>
-										<input name="name" id="name" type="text" class="form-input mt-2" placeholder="Name :">
-									</div>
+        <div class="testimonial-area bg py-120">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 mx-auto">
+                        <div class="site-heading text-center">
+                            <span class="site-title-tagline">Testimonials</span>
+                            <h2 class="site-title">What Client Say's</h2>
+                            <div class="heading-divider"></div>
+                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slider owl-carousel owl-theme">
+                    <div class="testimonial-single">
+                        <div class="testimonial-quote">
+                            <span class="testimonial-quote-icon"><i class="fas fa-quote-right"></i></span>
+                            <div class="testimonial-rate">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>There are many variations of passages available but the majority have suffered alteration in some form.</p>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="testimonial-author-img">
+                                <img src="{{ asset('assets/img/testimonial/01.jpg') }}" alt />
+                            </div>
+                            <div class="testimonial-author-info">
+                                <h4>Sylvia H Green</h4>
+                                <p>Founder And CEO</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-single">
+                        <div class="testimonial-quote">
+                            <span class="testimonial-quote-icon"><i class="fas fa-quote-right"></i></span>
+                            <div class="testimonial-rate">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>There are many variations of passages available but the majority have suffered alteration in some form.</p>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="testimonial-author-img">
+                                <img src="{{ asset('assets/img/testimonial/02.jpg') }}" alt />
+                            </div>
+                            <div class="testimonial-author-info">
+                                <h4>Gordon D Novak</h4>
+                                <p>Founder And CEO</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-single">
+                        <div class="testimonial-quote">
+                            <span class="testimonial-quote-icon"><i class="fas fa-quote-right"></i></span>
+                            <div class="testimonial-rate">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>There are many variations of passages available but the majority have suffered alteration in some form.</p>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="testimonial-author-img">
+                                <img src="{{ asset('assets/img/testimonial/03.jpg') }}" alt />
+                            </div>
+                            <div class="testimonial-author-info">
+                                <h4>Reid E Butt</h4>
+                                <p>Founder And CEO</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-single">
+                        <div class="testimonial-quote">
+                            <span class="testimonial-quote-icon"><i class="fas fa-quote-right"></i></span>
+                            <div class="testimonial-rate">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>There are many variations of passages available but the majority have suffered alteration in some form.</p>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="testimonial-author-img">
+                                <img src="{{ asset('assets/img/testimonial/04.jpg') }}" alt />
+                            </div>
+                            <div class="testimonial-author-info">
+                                <h4>Parker Jimenez</h4>
+                                <p>Founder And CEO</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-									<div class="lg:col-span-6 mb-5">
-										<label for="email" class="font-medium">Your Email:</label>
-										<input name="email" id="email" type="email" class="form-input mt-2" placeholder="Email :">
-									</div>
-								</div>
+        <div class="team-area pt-120">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 mx-auto">
+                        <div class="site-heading text-center">
+                            <span class="site-title-tagline">Team</span>
+                            <h2 class="site-title">Meet Experts</h2>
+                            <div class="heading-divider"></div>
+                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                        <div class="team-item">
+                            <img src="{{ asset('assets/img/team/01.jpg') }}" alt="thumb" />
+                            <div class="team-social">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                            <div class="team-content">
+                                <div class="team-bio">
+                                    <h5><a href="#">Malissa Fierro</a></h5>
+                                    <span>Developer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                        <div class="team-item">
+                            <img src="{{ asset('assets/img/team/02.jpg') }}" alt="thumb" />
+                            <div class="team-social">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                            <div class="team-content">
+                                <div class="team-bio">
+                                    <h5><a href="#">Arron Rodri</a></h5>
+                                    <span>Senior Designer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                        <div class="team-item active">
+                            <img src="{{ asset('assets/img/team/03.jpg') }}" alt="thumb" />
+                            <div class="team-social">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                            <div class="team-content">
+                                <div class="team-bio">
+                                    <h5><a href="#">Chad Smith</a></h5>
+                                    <span>Digital Marketer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                        <div class="team-item">
+                            <img src="{{ asset('assets/img/team/04.jpg') }}" alt="thumb" />
+                            <div class="team-social">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                            <div class="team-content">
+                                <div class="team-bio">
+                                    <h5><a href="#">Tony Pinto</a></h5>
+                                    <span>CEO & Founder</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-								<div class="grid grid-cols-1">
-									<div class="mb-5">
-										<label for="subject" class="font-medium">Your Question:</label>
-										<input name="subject" id="subject" class="form-input mt-2" placeholder="Subject :">
-									</div>
-
-									<div class="mb-5">
-										<label for="comments" class="font-medium">Your Comment:</label>
-										<textarea name="comments" id="comments" class="form-input mt-2 textarea" placeholder="Message :"></textarea>
-									</div>
-								</div>
-								<button type="submit" id="submit" name="send" class="btn bg-green-600 hover:bg-green-700 text-white rounded-md">Send Message</button>
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="container lg:mt-24 mt-16">
-			<div class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-[30px]">
-				<div class="text-center px-6">
-					<div class="relative overflow-hidden text-transparent -m-3">
-						<i data-feather="hexagon" class="h-32 w-32 fill-green-600/5 mx-auto"></i>
-						<div class="absolute top-2/4 -translate-y-2/4 left-0 right-0 mx-auto text-green-600 rounded-xl transition-all duration-500 ease-in-out text-4xl flex align-middle justify-center items-center">
-							<i class="uil uil-phone"></i>
-						</div>
-					</div>
-
-					<div class="content mt-7">
-						<h5 class="title h5 text-xl font-medium">Phone</h5>
-						<p class="text-slate-400 mt-3">The phrasal sequence of the is now so that many campaign and benefit</p>
-
-						<div class="mt-5">
-							<a href="tel:+152534-468-854" class="btn btn-link text-green-600 hover:text-green-600 after:bg-green-600 transition duration-500">+152 534-468-854</a>
-						</div>
-					</div>
-				</div>
-
-				<div class="text-center px-6">
-					<div class="relative overflow-hidden text-transparent -m-3">
-						<i data-feather="hexagon" class="h-32 w-32 fill-green-600/5 mx-auto"></i>
-						<div class="absolute top-2/4 -translate-y-2/4 left-0 right-0 mx-auto text-green-600 rounded-xl transition-all duration-500 ease-in-out text-4xl flex align-middle justify-center items-center">
-							<i class="uil uil-envelope"></i>
-						</div>
-					</div>
-
-					<div class="content mt-7">
-						<h5 class="title h5 text-xl font-medium">Email</h5>
-						<p class="text-slate-400 mt-3">The phrasal sequence of the is now so that many campaign and benefit</p>
-
-						<div class="mt-5">
-							<a href="mailto:contact@example.com" class="btn btn-link text-green-600 hover:text-green-600 after:bg-green-600 transition duration-500">contact@example.com</a>
-						</div>
-					</div>
-				</div>
-
-				<div class="text-center px-6">
-					<div class="relative overflow-hidden text-transparent -m-3">
-						<i data-feather="hexagon" class="h-32 w-32 fill-green-600/5 mx-auto"></i>
-						<div class="absolute top-2/4 -translate-y-2/4 left-0 right-0 mx-auto text-green-600 rounded-xl transition-all duration-500 ease-in-out text-4xl flex align-middle justify-center items-center">
-							<i class="uil uil-map-marker"></i>
-						</div>
-					</div>
-
-					<div class="content mt-7">
-						<h5 class="title h5 text-xl font-medium">Location</h5>
-						<p class="text-slate-400 mt-3">C/54 Northwest Freeway, Suite 558, <br> Houston, USA 485</p>
-
-						<div class="mt-5">
-							<a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39206.002432144705!2d-95.4973981212445!3d29.709510002925988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c16de81f3ca5%3A0xf43e0b60ae539ac9!2sGerald+D.+Hines+Waterwall+Park!5e0!3m2!1sen!2sin!4v1566305861440!5m2!1sen!2sin"
-							   data-type="iframe" class="video-play-icon read-more lightbox btn btn-link text-green-600 hover:text-green-600 after:bg-green-600 transition duration-500">View on Google map</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+        <div class="partner-area pt-70 pb-70">
+            <div class="container">
+                <div class="partner-wrapper partner-slider owl-carousel owl-theme">
+                    <img src="{{ asset('assets/img/partner/01.png') }}" alt="thumb" />
+                    <img src="{{ asset('assets/img/partner/02.png') }}" alt="thumb" />
+                    <img src="{{ asset('assets/img/partner/03.png') }}" alt="thumb" />
+                    <img src="{{ asset('assets/img/partner/04.png') }}" alt="thumb" />
+                    <img src="{{ asset('assets/img/partner/05.png') }}" alt="thumb" />
+                    <img src="{{ asset('assets/img/partner/06.png') }}" alt="thumb" />
+                </div>
+            </div>
+        </div>
+    </main>
 @endsection

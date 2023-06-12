@@ -1,37 +1,41 @@
 <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="csrf-token" content="{{ csrf_token() }}">
-	<title>{{ config('app.name', 'VPN') }}</title>
-{{--	@vite('resources/css/app.css')--}}
-	<link href="{{asset('build/assets/app-6ee18969.css')}}" rel="stylesheet">
-	<link href="{{asset('assets/libs/tiny-slider/tiny-slider.css')}}" rel="stylesheet">
-	<link href="{{asset('assets/libs/tobii/css/tobii.min.css')}}" rel="stylesheet">
-	<link href="{{asset('assets/libs/choices.js/public/assets/styles/choices.min.css')}}" rel="stylesheet">
-	<link href="{{asset('assets/libs/@iconscout/unicons/css/line.css')}}" rel="stylesheet"/>
-	<link href="{{asset('assets/css/icons.css')}}" rel="stylesheet"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <title>{{ config('app.name', 'VPN') }}</title>
+    <link rel="icon" href="{{ asset('assets/img/logo/favicon.png') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/all-fontawesome.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/flaticon.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/animate.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/magnific-popup.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/owl.carousel.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
 </head>
 <body>
-<div id="app">
+<div>
 
-	<x-header/>
+    <x-header/>
 
-	<main>
-		@yield('content')
-	</main>
+    @yield('content')
 
-	<x-footer/>
+    <x-footer/>
 </div>
 
-<script src="{{asset('assets/libs/tiny-slider/min/tiny-slider.js')}}"></script>
-<script src="{{asset('assets/libs/tobii/js/tobii.min.js')}}"></script>
-<script src="{{asset('assets/libs/choices.js/public/assets/scripts/choices.min.js')}}"></script>
-<script src="{{asset('assets/libs/feather-icons/feather.min.js')}}"></script>
+<script src="{{ asset('assets/js/jquery-3.6.0.min.js') }}"></script>
+<script src="{{ asset('assets/js/modernizr.min.js') }}"></script>
+<script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
+<script src="{{ asset('assets/js/imagesloaded.pkgd.min.js') }}"></script>
+<script src="{{ asset('assets/js/jquery.magnific-popup.min.js') }}"></script>
+<script src="{{ asset('assets/js/isotope.pkgd.min.js') }}"></script>
+<script src="{{ asset('assets/js/jquery.appear.min.js') }}"></script>
+<script src="{{ asset('assets/js/jquery.easing.min.js') }}"></script>
+<script src="{{ asset('assets/js/owl.carousel.min.js') }}"></script>
+<script src="{{ asset('assets/js/counter-up.js') }}"></script>
+<script src="{{ asset('assets/js/wow.min.js') }}"></script>
+<script src="{{ asset('assets/js/main.js') }}"></script>
 
-<script src="{{asset('assets/js/easy_background.js')}}"></script>
-<script src="{{asset('assets/js/plugins.init.js')}}"></script>
-<script src="{{asset('assets/js/app.js')}}"></script>
 </body>
 </html>
