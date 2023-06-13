@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
+
 class AllController extends Controller
 {
     public function home()
@@ -34,7 +36,16 @@ class AllController extends Controller
         return view('profile');
     }
 
-    public function pay() {
+    public function pay()
+    {
         return view('pay');
+    }
+
+    public function pay_buy()
+    {
+        auth()->user()->update([
+            'buy' => 1,
+        ]);
+        return redirect()->route('profile.index');
     }
 }

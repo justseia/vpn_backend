@@ -10,5 +10,6 @@ Route::get('/price', [\App\Http\Controllers\AllController::class, 'price'])->nam
 Route::get('/blog', [\App\Http\Controllers\AllController::class, 'blog'])->name('blog.index');
 Route::get('/profile', [\App\Http\Controllers\AllController::class, 'profile'])->name('profile.index');
 Route::get('/pay', [\App\Http\Controllers\AllController::class, 'pay'])->name('pay.index');
+Route::post('/pay/buy', [\App\Http\Controllers\AllController::class, 'pay_buy'])->name('pay.buy');
 
 Auth::routes();
